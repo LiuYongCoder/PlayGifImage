@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="LeftImageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f87-TD-9ke" customClass="SDAnimatedImageView">
+                        <rect key="frame" x="15" y="16" width="109" height="88"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="88" id="OtU-FL-IId"/>
+                            <constraint firstAttribute="width" constant="109" id="U5h-Zc-NoD"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="季风吹向大海，在天空之外季风吹向大海，在天空之外" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfT-th-mLt">
+                        <rect key="frame" x="139" y="16" width="166" height="57.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="动图" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLC-e1-lK1">
+                        <rect key="frame" x="94" y="88" width="30" height="16"/>
+                        <color key="backgroundColor" red="0.01176470588" green="0.61568627450000002" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="IgV-RT-809"/>
+                            <constraint firstAttribute="height" constant="16" id="aNj-E4-2Cv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WLC-e1-lK1" firstAttribute="bottom" secondItem="f87-TD-9ke" secondAttribute="bottom" id="2Jy-Gc-E5s"/>
+                    <constraint firstAttribute="trailing" secondItem="yfT-th-mLt" secondAttribute="trailing" constant="15" id="A5W-iO-cDw"/>
+                    <constraint firstAttribute="bottom" secondItem="f87-TD-9ke" secondAttribute="bottom" constant="16" id="NHy-pz-4aN"/>
+                    <constraint firstItem="WLC-e1-lK1" firstAttribute="trailing" secondItem="f87-TD-9ke" secondAttribute="trailing" id="fD5-v8-oHM"/>
+                    <constraint firstItem="f87-TD-9ke" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="fje-yh-W2B"/>
+                    <constraint firstItem="f87-TD-9ke" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="pLb-GS-W74"/>
+                    <constraint firstItem="yfT-th-mLt" firstAttribute="top" secondItem="f87-TD-9ke" secondAttribute="top" id="pZ7-Bh-AfS"/>
+                    <constraint firstItem="yfT-th-mLt" firstAttribute="leading" secondItem="f87-TD-9ke" secondAttribute="trailing" constant="15" id="wWT-Qh-99R"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="gifMarkLab" destination="WLC-e1-lK1" id="kyd-rg-ml3"/>
+                <outlet property="leftImageView" destination="f87-TD-9ke" id="4Jn-ey-JcL"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="122.54464285714285"/>
+        </tableViewCell>
+    </objects>
+</document>
